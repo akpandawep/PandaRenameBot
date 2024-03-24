@@ -61,4 +61,19 @@ restart - To Rrstart The Bot (Admin Only)
 status - Check Bot Status (Admin Only)
 broadcast - Send Message To All Users (Admin Only)
 ```
+## ❣️Thanks To
+
+<a href="https://t.me/PandaWep">
+   <p>PandaWep</p>
+  </a>
+<a href="https://youtube.com/c/@PandaWep">
+   <p>PandaWep YT</p>
+  </a>
+
+## 🤩 INSPIRATION
+
+<a href="https://youtube.com/c/">
+   <p>❣️ Lazy Developer 🔥</p>
+  </a>
+
 
