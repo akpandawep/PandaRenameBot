@@ -1,2 +1,2 @@
-web: python bot.py 
-worker: python bot.py
+web: python PandaWep.py
+worker: python PandaWep.py
