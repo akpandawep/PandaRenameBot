@@ -58,7 +58,7 @@ class Txt(object):
 
 💺 Tʜɪs Bᴏᴛ Wᴀs Cʀᴇᴀᴛᴇᴅ Bʏ : @PandaWep 💞</b>
 
-<b><a href='https://github.com/PandaWep/PandaRenameBot'>PandaWep/PandaRenameBot.git</a></b>
+<b>Bot Rapo:- <a href='https://github.com/PandaWep/PandaRenameBot'>PandaWep/PandaRenameBot.git</a></b>
 """
 
     ABOUT_TXT = """<b>╭───────────⍟
