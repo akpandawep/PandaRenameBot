@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PandaRenameBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        p {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .deploy-buttons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .config-list {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        .config-list li {
+            margin-bottom: 10px;
+        }
+        .copy-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        pre {
+            position: relative;
+            padding: 15px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        pre button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         a {
+            text-decoration: none; /* Remove underline */
+            color: black; /* Set text color to black */
+            transition: color 0.3s, text-shadow 0.3s; /* Add transition for smooth effect */
+        }
+        a:hover {
+            text-shadow: 0 0 10px black; /* Add glow effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" style="text-align: center;">
+    <img src="https://graph.org/file/b3125068739885e7109db.jpg" alt="PandaRenameBot Logo" style="max-width: 50px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+    <p style="display: inline-block; vertical-align: middle; margin: 0;">PandaRenameBot</p>
+    <p>🅡🅔🅟🅞 🅢🅣🅐🅣🅢</p>
+
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=PandaWep&repo=PandaRenameBot&theme=dark" alt="github card">
+
+    <h2>Deploy To Koyeb</h2>
+    <a href="https://app.koyeb.com/deploy?type=git&repository=github.com/PandaWep/PandaRenameBot&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[WEBHOOK]=True&env[ADMIN]&env[DB_URL]&env[DB_NAME]=pyro-botz&env[FORCE_SUB]&env[START_PIC]&env[LOG_CHANNEL]=You%20Dont%20Need%20LogChannel%20To%20Remove%20This%20Variable&run_command=python%20bot.py&branch=main&name=PandaRenameBot">
+        <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy to Koyeb">
+    </a>
+
+    <h2>Deploy To Render</h2>
+    <a href="https://render.com/deploy?repo=https://github.com/PandaWep/PandaRenameBot">
+        <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+    </a>
+
+    <h2>Deploy To Railway</h2>
+    <a href="https://railway.app/button.svg">
+        <img src="https://railway.app/button.svg" alt="Deploy">
+    </a>
+
+    <h2>Deploy To Heroku</h2>
+    <a href="https://heroku.com/deploy?template=https://github.com/PandaWep/PandaRenameBot">
+        <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+    </a>
+
+    <h2>Configs</h2>
+    <div class="config-list">
+        <ul>
+            <li><strong>BOT_TOKEN</strong> - Get Bot Token From @BotFather</li>
+            <li><strong>API_ID</strong> - From my.telegram.org</li>
+            <li><strong>API_HASH</strong> - From my.telegram.org</li>
+            <li><strong>WEBHOOK</strong> - If Your Server Is Need Web Service! Value = `True` Else Value = `False`</li>
+            <li><strong>ADMIN</strong> - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split</li>
+            <li><strong>DB_URL</strong>  - Mongo Database URL From https://cloud.mongodb.com</li>
+            <li><strong>DB_NAME</strong>  - Your Database Name From Mongodb.</li>
+            <li><strong>FORCE_SUB</strong> - Your Force Sub Channel Username Without @</li>
+            <li><strong>LOG_CHANNEL</strong> - Bot Logs Sending Channel. If You Don't Need This To Remove This Variable In Your Server</li>
+            <li><strong>START_PIC</strong> - Start Message Photo. You Don't Need This! Just Skip</li>
+        </ul>
+        
+    </div>
+<h2>Botfather Commands</h2>
+<pre>
+start - Bot Alive Checking
+view_thumb - View Thumbnail
+del_thumb - Delete Thumbnail
+set_caption - Set A Custom Caption
+see_caption - See Your Custom Caption
+del_caption - Delete Custom Caption
+restart - To Restart The Bot (Admin Only)
+status - Check Bot Status (Admin Only)
+broadcast - Send Message To All Users (Admin Only)<button class="copy-btn" onclick="copyToClipboard('Botfather Commands copied to clipboard!')">Copy</button>
+</pre>
+
+<h2>Google Cloud Command</h2>
+<pre id="gc">
+git clone https://github.com/PandaWep/PandaRenameBot
+cd PandaRenameBot
+pip install -r requirements.txt
+python3 PandaWep.py<button class="copy-btn" onclick="copyToClipboard2('Google Cloud Command copied to clipboard!')">Copy</button>
+</pre>
+
+
+    <h2>❣️Thanks To</h2>
+    <a href="https://t.me/PandaWep">
+       <p>PandaWep</p>
+    </a>
+    <a href="https://youtube.com/c/@PandaWep">
+       <p>PandaWep YT</p>
+    </a>
+
+    <h2>🤩 INSPIRATION</h2>
+    <a href="https://youtube.com/c/">
+       <p>❣️ Lazy Developer 🔥</p>
+    </a>
+</div>
+
+<script>
+    function copyToClipboard() {
+        const preElement = document.querySelector("pre");
+        const textarea = document.createElement("textarea");
+        textarea.textContent = preElement.innerText;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+        alert(preElement.innerText + "\n\nCommands copied to clipboard!");
+    }
+
+    function copyToClipboard2() {
+        const preElement = document.getElementById("gc");
+        const textarea = document.createElement("textarea");
+        textarea.textContent = preElement.innerText;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+        alert(preElement.innerText + "\n\nGoogle Cloud Command copied to clipboard!");
+    }
+
+</script>
+
+</body>
+</html>
